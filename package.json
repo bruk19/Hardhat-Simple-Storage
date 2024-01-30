@@ -1,0 +1,11 @@
+{
+  "name": "Hardhat-Simple-Storage",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:bruk19/Hardhat-Simple-Storage.git",
+  "author": "Bruk Teshome <brukteshome21@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.19.4"
+  }
+}
