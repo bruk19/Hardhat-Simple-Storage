@@ -1,6 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config()
 require("./tasks/block-number")
+require("hardhat-gas-reporter")
 // require("@nomiclabs/hardhat-etherscan")
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -24,7 +25,10 @@ module.exports = {
   solidity: "0.8.8",
   etherScan: {
     apiKey: {
-      sepolia: "7DQVWSGK242PIP3QKIF39GW67X4U1RIUUY",
+      sepolia: ETHERSCAN_API_KEY,
     },
+  },
+  gasReporter: {
+    enabled: true
   },
 };
