@@ -14,7 +14,7 @@ async function main() {
   console.log(`Current Value is: ${currentValue}`)
 
   const transactionResponse = await simpleStorage.store(7)
-  await transactionResponse().wait(1)
+  await transactionResponse.wait(1)
   const updatedValue = await simpleStorage.retrieve()
   console.log(`Updated Value is: ${updatedValue}`)
 }

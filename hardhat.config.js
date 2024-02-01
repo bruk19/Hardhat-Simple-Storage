@@ -1,6 +1,6 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config()
-require("./test/tasks/block-number")
+require("./tasks/block-number")
 // require("@nomiclabs/hardhat-etherscan")
 
 /** @type import('hardhat/config').HardhatUserConfig */
@@ -16,6 +16,10 @@ module.exports = {
        accounts: [PRIVATE_KEY],
        chainId: 11155111,
     },
+    localhost: {
+      url: "http://127.0.0.1:8545/",
+      chainId: 31337,
+    }
   },
   solidity: "0.8.8",
   etherScan: {
